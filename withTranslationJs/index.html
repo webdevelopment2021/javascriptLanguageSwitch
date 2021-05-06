@@ -17,9 +17,9 @@
   <title>jQuery Translate.js Example</title>
   <script>
     var languagesText = {
-      "en": { "hey": "Hello World" },
-      "cn": { "hey": "你好世界" },
-      "ur": { "hey": "kia hal he g" }
+      "en": { "hey": "Hello World", "details": "Details of the current page" },
+      "cn": { "hey": "你好世界" , "details": "kkkk kkkk kkk" },
+      "ur": { "hey": "kia hal he g", "details": "page ki details"}
     };
     $(function () {
       $("span").translate({ default_lang: "en", langs: "#langs", source: languagesText });
@@ -31,6 +31,7 @@
   <div class="container">
     <h1>jQuery Translate.js Example</h1>
     <h3><span data-trans-hey>Hello World</span></h3>
+    <h3><span data-trans-details>Details of the page</span></h3>
     <select id="langs" class="form-control mt-5">
       <option value="en">English</option>
       <option value="cn">简体中文</option>
