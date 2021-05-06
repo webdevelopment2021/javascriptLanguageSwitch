@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/translate.js"></script>
+  <title>jQuery Translate.js Example</title>
+  <script>
+    var languagesText = {
+      "en": { "hey": "Hello World" },
+      "cn": { "hey": "你好世界" },
+      "ur": { "hey": "kia hal he g" }
+    };
+    $(function () {
+      $("span").translate({ default_lang: "en", langs: "#langs", source: languagesText });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>jQuery Translate.js Example</h1>
+    <h3><span data-trans-hey>Hello World</span></h3>
+    <select id="langs" class="form-control mt-5">
+      <option value="en">English</option>
+      <option value="cn">简体中文</option>
+      <option value="ur">Urdu</option>
+    </select>
+  </div>
+</body>
+
+</html>
